@@ -1,0 +1,15 @@
+public class Main implements Runnable
+{
+	public void run()
+	{
+		System.out.println("Running Child Thread - "+ Thread.currentThread().getName());
+	}
+	public static void main(String[] args)
+	{
+		Main th=new Main();
+		Thread t=new Thread(th);
+		t.start();
+		System.out.println("Running Main Thread - "+ Thread.currentThread().getName());
+	}
+
+}
