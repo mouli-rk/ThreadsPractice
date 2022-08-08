@@ -1,4 +1,4 @@
-public class Main implements Runnable
+public class ThreadRunnable implements Runnable
 {
 	public void run()
 	{
@@ -6,7 +6,7 @@ public class Main implements Runnable
 	}
 	public static void main(String[] args)
 	{
-		Main th=new Main();
+		ThreadRunnable th=new ThreadRunnable();
 		Thread t=new Thread(th);
 		t.start();
 		System.out.println("Running Main Thread - "+ Thread.currentThread().getName());
