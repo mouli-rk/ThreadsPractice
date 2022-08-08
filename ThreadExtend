@@ -1,13 +1,12 @@
-package javaprct;
-
-public class ThreadExtend extends Thread{
-	public void run()
+public class Main extends Thread
+{
+    public void run()
     {
         System.out.println("Running Child Thread - "+currentThread().getName());
     }
     public static void main(String[] args)
     {
-    	ThreadExtend t=new ThreadExtend();
+    	Main t=new Main();
     	t.start();
     	System.out.println("Running Main Thread - "+Thread.currentThread().getName());
 	}
