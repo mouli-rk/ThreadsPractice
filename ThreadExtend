@@ -1,4 +1,4 @@
-public class Main extends Thread
+public class ThreadExtend extends Thread
 {
     public void run()
     {
@@ -6,7 +6,7 @@ public class Main extends Thread
     }
     public static void main(String[] args)
     {
-    	Main t=new Main();
+    	ThreadExtend t=new ThreadExtend();
     	t.start();
     	System.out.println("Running Main Thread - "+Thread.currentThread().getName());
 	}
